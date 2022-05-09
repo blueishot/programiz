@@ -28,3 +28,21 @@ const variable11 = 100;
 for(i = 1; i <= variable11; i++) {
     console.log(`Essa foi a mensagem número ${i}`);
 }
+
+// JavaScript while and do...while Loop
+
+const n = 10;
+let m = 1;
+
+while(m <= n) {
+    console.log(`O número atual é ${m} pois é um while`)
+    m++
+}
+
+const variable12 = 10;
+let variable13 = 3;
+
+do {
+    console.log(`Isso aqui é um DoWhile e é o número ${variable13}`);
+    variable13++
+} while(variable13 <= variable12)
