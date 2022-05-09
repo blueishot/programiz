@@ -79,3 +79,20 @@ console.log((10 < 11) ? 'Menor' : 'Maior');
 // Comentário de uma linha //
 /* Comentário de 
 várias linhas */
+
+// JavaScript Type Conversions
+
+let variableImplict = '3' + 2; // should return '32'
+console.log(variableImplict)
+
+let variableImplict2 = '3' + true; // should return '3true'
+console.log(variableImplict2);
+
+let variableImplict3 = '4' - '2'; // should return 2
+console.log(variableImplict3)
+
+Number('212'); // String -> Number
+String(121); // Number -> String
+toString(234); // Number -> String
+Boolean(123); 
+Boolean(null)
