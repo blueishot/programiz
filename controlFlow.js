@@ -20,3 +20,11 @@ if (variable10 == 15)
     console.log('é 15')
 else
     console.log('não é 15')
+
+// JavaScript for loop
+
+const variable11 = 100;
+
+for(i = 1; i <= variable11; i++) {
+    console.log(`Essa foi a mensagem número ${i}`);
+}
