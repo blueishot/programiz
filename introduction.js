@@ -42,3 +42,34 @@ console.log(typeof(variableUndefined));
 console.log(typeof(variableNull));
 console.log(typeof(variableSymbol));
 console.log(typeof(variableObject));
+
+// JavaScript Operators
+
+let variableAssingment = 14;
+variableAssingment += variableAssingment + 15;
+variableAssingment -= variableAssingment - 15;
+variableAssingment *= 12;
+variableAssingment /= 1;
+variableAssingment %= 2;
+variableAssingment **= 12;
+
+let variableArithmetic = 10;
+variableArithmetic + 3;
+variableArithmetic - 4;
+variableArithmetic * 3;
+variableArithmetic / 4;
+variableArithmetic % 3;
+
+console.log(3 == 'texto'); // false
+console.log(30 != 31); // true
+console.log(30 === 30); // true
+console.log(30 !== 'texto') // true
+console.log(15 > 30) // false
+console.log(30 >= 15) // true
+console.log(14 < 21) // true
+console.log(130 <= 1) // false
+
+console.log(14 && 15 > 10) // true
+console.log(13 && 14 > 30) // false
+
+console.log((10 < 11) ? 'Menor' : 'Maior');
