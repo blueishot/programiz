@@ -73,3 +73,9 @@ console.log(14 && 15 > 10) // true
 console.log(13 && 14 > 30) // false
 
 console.log((10 < 11) ? 'Menor' : 'Maior');
+
+// JavaScript Comments
+
+// Comentário de uma linha //
+/* Comentário de 
+várias linhas */
