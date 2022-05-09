@@ -46,3 +46,13 @@ do {
     console.log(`Isso aqui é um DoWhile e é o número ${variable13}`);
     variable13++
 } while(variable13 <= variable12)
+
+// JavaScript break Statement
+
+for(let variable14 = 1; variable14 <= 20; variable14++) {
+    if(variable14 == 14) {
+        break
+    }
+
+    console.log(`Eu sou o número ${variable14}`);
+}
