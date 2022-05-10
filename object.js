@@ -34,4 +34,15 @@ const rexOrangeCounty = {
     }
 }
 
-console.log(rexOrangeCounty.pony())
+rexOrangeCounty.pony()
+
+// JavaScript Methods and this Keyword
+
+const mareux = {
+    decade: 'Come back to me',
+    album: function () {
+        return console.log('Mareux release ' + this.decade)
+    }
+}
+
+mareux.album()
