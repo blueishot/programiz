@@ -17,3 +17,15 @@ function multiplicar(num1, num2) {
 }
 
 console.log(multiplicar(10, 4));
+
+// JavaScript Variable Scope
+
+let variable17 = 'eu sou uma variável global' // global scope
+
+function scopesExample() {
+    let variable18 = 'eu sou uma variável local'; // local scope
+    return console.log(variable18);
+}
+
+console.log(variable17);
+scopesExample()
