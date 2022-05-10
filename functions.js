@@ -29,3 +29,17 @@ function scopesExample() {
 
 console.log(variable17);
 scopesExample()
+
+// JavaScript Hoisting
+
+songName('Willow')
+
+function songName(song) {
+    return console.log(`O nome da música é ${song}`);
+}
+
+console.log(variable19); // Undefined
+var variable19 = 20;
+
+var variable20 = 21;
+console.log(variable20) // 'var' is needed
