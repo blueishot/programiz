@@ -56,3 +56,14 @@ for(let variable14 = 1; variable14 <= 20; variable14++) {
 
     console.log(`Eu sou o número ${variable14}`);
 }
+
+// JavaScript continue Statement
+
+for(let variable15 = 1; variable15 <=6; variable15++) {
+    if(variable15 == 4) {
+        console.log('você deveria acabar aqui')
+        continue
+    }
+
+    console.log(`${variable15}`)
+}
