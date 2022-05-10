@@ -43,3 +43,21 @@ var variable19 = 20;
 
 var variable20 = 21;
 console.log(variable20) // 'var' is needed
+
+// JavaScript Recursion
+
+let variable21 = 1; 
+
+function recurse(numero) {
+    console.log('Isso irá repetir algumas vezes...');
+    let somatoria = variable21 + numero
+    console.log(somatoria)
+
+    if(variable21 < 8) {
+        recurse();
+    } else {
+        console.log('O código acaba por aqui')
+    }
+}
+
+recurse(1)
