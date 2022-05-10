@@ -67,3 +67,44 @@ for(let variable15 = 1; variable15 <=6; variable15++) {
 
     console.log(`${variable15}`)
 }
+
+// JavaScript Switch Statement
+
+let variable16 = 4
+
+switch (variable16) {
+    case 1: {
+        console.log(`A variável é ${variable16} e deveria ser 1`);
+        break;
+    }
+    case 2: {
+        console.log(`A variável é ${variable16} e deveria ser 2`);
+        break;
+    }
+    case 3: {
+        console.log(`A variável é ${variable16} e deveria ser 3`);
+        break;
+    }
+    case 4: {
+        console.log(`A variável é ${variable16} e deveria ser 4`)
+        break;
+    }
+    default: {
+        console.log(`A variável não é encontrada`);
+        break;
+    }
+}
+
+switch('macarrao') {
+    case 'sorvete':
+    case 'macarrao':
+    case 'pão de queijo':
+        {
+            console.log('Eu sou uma comida listada')
+            break;
+        }
+    default: {
+        console.log('Eu não sou uma comida listada');
+        break;
+    }
+}
