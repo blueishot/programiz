@@ -98,3 +98,26 @@ console.log(currentJoys.aDifferentAge);
 currentJoys.changeSong = 'A different Age';
 
 console.log(currentJoys.aDifferentAge);
+
+// JavaScript Prototype
+
+function StrawberryGuy() {
+    this.song = 'Without you',
+    this.album = 'Taking my time to be'
+}
+
+const strawberry = new StrawberryGuy();
+
+console.log(strawberry.album);
+
+StrawberryGuy.prototype.secondAlbum = 'Sun outside my window';
+
+console.log(strawberry.secondAlbum);
+
+StrawberryGuy.prototype = {secondAlbum: 'New album release'};
+
+console.log(strawberry.secondAlbum);
+
+const strawberry2 = new StrawberryGuy();
+
+console.log(strawberry2.secondAlbum);
