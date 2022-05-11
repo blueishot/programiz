@@ -71,3 +71,30 @@ console.log(theStrokesSongs.secondSong)
 TheStrokes.prototype.fortySong = 'Bad decisions';
 
 console.log(theStrokesSongs.fortySong);
+
+// JavaScript Getter and Setter
+
+const Mitski = {
+    beTheCowboy: 'Lonesome Love',
+
+    get getSong() {
+        return this.beTheCowboy;
+    }
+}
+
+console.log(Mitski.beTheCowboy);
+console.log(Mitski.getSong)
+
+const currentJoys = {
+    aDifferentAge: 'My nights are more beautiful than my days',
+
+    set changeSong(songFromCurrentJoys) {
+        this.aDifferentAge = songFromCurrentJoys;
+    }
+}
+
+console.log(currentJoys.aDifferentAge);
+
+currentJoys.changeSong = 'A different Age';
+
+console.log(currentJoys.aDifferentAge);
