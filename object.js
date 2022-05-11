@@ -46,3 +46,28 @@ const mareux = {
 }
 
 mareux.album()
+
+// JavaScript Constructor Function
+
+function Iamx() {
+    this.album = 'Volatile Times',
+    this.song = 'Bernadette'
+} // constructor
+
+const band = new Iamx(); // Create an object
+console.log(band.album);
+
+const band2 = new Iamx(); // -> new object with same constructor
+
+function TheStrokes(firstSong, secondSong, thirdSong) {
+    this.firstSong = firstSong;
+    this.secondSong = secondSong;
+    this.thirdSong = thirdSong;
+}
+
+const theStrokesSongs = new TheStrokes('The adults are talking', 'Selfless', 'Ode to the Mets');
+console.log(theStrokesSongs.secondSong)
+
+TheStrokes.prototype.fortySong = 'Bad decisions';
+
+console.log(theStrokesSongs.fortySong);
