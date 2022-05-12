@@ -132,3 +132,25 @@ for (let i in someString) {
 for (let i in someArray) {
     console.log(someArray[i]);
 }
+
+// JavaScript Number
+
+const someNumber = 12;
+const someExponencial = 42e4;
+
+console.log(someExponencial);
+
+const isANumber = 10 - 'string';
+console.log(isANumber); // Should return NaN
+
+const notABigInt = 10071992512423123213123127409980;
+console.log(notABigInt);
+
+const bigIntExample = 10071992512321312312312312347409980n;
+console.log(bigIntExample);
+
+const shouldGiveAnError = 0.1 + 0.2;
+console.log(shouldGiveAnError);
+console.log(shouldGiveAnError.toFixed(1));
+
+console.log(parseInt('2'));
