@@ -35,4 +35,13 @@ const arrayExample2 = [4, 5, 6];
 const concatExample = arrayExample1.concat(arrayExample2);
 console.log(concatExample);
 
-const indexExample
+const indexExample = arrayExample1.indexOf(2, 0);
+console.log(indexExample)
+
+const findExample = arrayExample1.find(element => element > 0);
+console.log(findExample);
+
+let foods = ['ice cream', 'potato', 'tomato', 'banana', 'apple']
+
+const sortExample = foods.sort();
+console.log(sortExample)
