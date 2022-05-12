@@ -154,3 +154,22 @@ console.log(shouldGiveAnError);
 console.log(shouldGiveAnError.toFixed(1));
 
 console.log(parseInt('2'));
+
+// JavaScript Symbol
+
+const symbolExample = Symbol('Example');
+const symbolExample2 = Symbol('Example');
+
+console.log(symbolExample === symbolExample2); // Should return false
+
+let dadosSymbol = Symbol('dados');
+
+const objectExample = {
+    name: 'Mathias',
+    [dadosSymbol]: 132
+}
+
+console.log(objectExample);
+
+const symbolExample3 = Symbol.for('Coruja');
+console.log(symbolExample3);
