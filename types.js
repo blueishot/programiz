@@ -44,4 +44,26 @@ console.log(findExample);
 let foods = ['ice cream', 'potato', 'tomato', 'banana', 'apple']
 
 const sortExample = foods.sort();
-console.log(sortExample)
+console.log(sortExample) // ordem alfabética
+
+const sliceExample = foods.slice(2);
+console.log(sliceExample);
+
+// JavaScript Multidimensional Array
+
+const multidimensionalArray = [[1, 2, 5], [30, 10, 500], [0, 0, 0]];
+
+console.log(multidimensionalArray[1][1]);
+
+let student1 = ['Jack', 20];
+let student2 = ['Mapple', 20];
+let student3 = ['Martha', 19];
+
+let allStudents = [student1, student2, student3];
+console.log(allStudents);
+
+allStudents.push(['Peter', 20]);
+console.log(allStudents);
+
+allStudents[3][2] = 'Something';
+console.log(allStudents);
