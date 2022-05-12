@@ -67,3 +67,34 @@ console.log(allStudents);
 
 allStudents[3][2] = 'Something';
 console.log(allStudents);
+
+// JavaScript String
+
+const iAmAString = 'Hello';
+
+const singleString = 'Hello again';
+console.log(singleString);
+const doubleString = "The third hello";
+console.log(doubleString);
+const backticksString = `Eu sou um hello que pode fazer mágica: ${doubleString}`;
+console.log(backticksString);
+
+console.log(backticksString[21]);
+console.log(backticksString.charAt(3));
+
+const oneLetter = 'R';
+
+console.log(oneLetter === 'r'); // Uppercase =/= Lowercase
+
+console.log(backticksString.length);
+
+console.log(doubleString.concat(singleString));
+const replaceExample = oneLetter.replace(/R/i, 'L');
+console.log(replaceExample);
+
+console.log(doubleString.split()); // string now is an Array
+console.log(doubleString.toLowerCase());
+console.log(doubleString.toUpperCase());
+
+const whiteSpace = ' teste '
+console.log(whiteSpace.trim());
