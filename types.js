@@ -98,3 +98,37 @@ console.log(doubleString.toUpperCase());
 
 const whiteSpace = ' teste '
 console.log(whiteSpace.trim());
+
+// JavaScript for...in loop
+
+const idCard = {
+    name: 'Maria',
+    age: 21,
+    nacionality: 'European'
+}
+
+for (let i in idCard) {
+    console.log(`${i} => ${idCard[i]}`);
+}
+
+const salaryPrices = {
+    Maria: 2010,
+    Dean: 1250,
+    Mapple: 1500
+}
+
+for (let i in salaryPrices) {
+    console.log(salaryPrices[i]);
+    let salary = "$" + salaryPrices[i];
+    console.log(`${i}: ${salary}`)
+}
+
+const someString = 'Alguma string'
+
+for (let i in someString) {
+    console.log(someString[i]);
+}
+
+for (let i in someArray) {
+    console.log(someArray[i]);
+}
