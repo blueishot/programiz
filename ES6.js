@@ -53,3 +53,20 @@ let arrowExample3 = (...args) => {
 } // Spread is needed
 
 arrowExample3(10, 20, 30)
+
+// JavaScript Default Parameters
+
+function somatoria(x, y = 20) {
+    console.log('teste');
+    console.log(`${x}, ${y}`);
+    return x + y;
+}
+
+somatoria(20)
+console.log(somatoria(123, 32));
+
+function defaultArg (x = 10) {
+    console.log(x);
+}
+
+defaultArg(undefined); // return the default value.
