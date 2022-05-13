@@ -15,3 +15,18 @@ function tryRunIt() {
 }
 
 tryRunIt()
+
+// JavaScript throw Statement
+
+const variable22 = 15
+
+try {
+    if (variable22 > 20) {
+        console.log('Essa variável é maior que 20');
+    } else {
+        throw new Error('A variável não é maior que 20');
+    }
+} catch (error) {
+    console.log('Um erro ocorreu');
+    console.log('O erro ocorrido: ' + error);
+}
