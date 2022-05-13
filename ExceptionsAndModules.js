@@ -30,3 +30,11 @@ try {
     console.log('Um erro ocorreu');
     console.log('O erro ocorrido: ' + error);
 }
+
+// JavaScript Modules
+
+export default function lady() {
+    console.log('I love when you sing that song');
+}
+
+// should import somefunction from './ExceptionsAndModules.js' in another file.
