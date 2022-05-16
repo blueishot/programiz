@@ -176,10 +176,25 @@ map1.set('watermelon', {type: 'fruit', color: 'green'});
 console.log(map1);
 console.log(map1.size);
 
-const weakExample = new WeakMap();
-console.log(weakExample);
+// JavaScript Set and WeakSet
 
-let objectForWeak = {};
+const set1 = new Set();
+console.log(set1);
 
-weakExample.set(objectForWeak, '132');
-console.log(weakExample);
+const set2 = new Set(['blue', 'red', 'yellow']);
+console.log(set2);
+
+const set3 = new Set(['violet', 'purple', 'green', 'purple', 'pink']);
+console.log(set3);
+
+console.log(set3.values());
+console.log(set3.has('violet'));
+
+set3.add('orange');
+console.log(set3);
+
+set3.delete('pink');
+console.log(set3)
+
+set3.clear();
+console.log(set3);
