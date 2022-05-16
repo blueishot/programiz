@@ -198,3 +198,47 @@ console.log(set3)
 
 set3.clear();
 console.log(set3);
+
+// JavaScript Destructuring Assignment
+
+const variable29 = {
+    name: 'Manuela',
+    age: 23,
+    job: 'Streamer'
+}
+
+let {name, age, job} = variable29;
+
+console.log(name);
+console.log(age);
+console.log(job);
+
+let {name: name1, age: age1, job: job1} = variable29;
+console.log(name1);
+console.log(age1);
+console.log(job1);
+
+
+let variable30 = {
+    hours: 13,
+    days: 30,
+    weeks: 4
+}
+
+const {hours, days, weeks, dream = 'singer'} = variable30;
+
+console.log(hours);
+console.log(days);
+console.log(weeks);
+console.log(dream);
+
+let variable31 = 10;
+let variable32 = 11;
+
+console.log(variable31);
+console.log(variable32);
+
+[variable31, variable32] = [variable32, variable31];
+
+console.log(variable31);
+console.log(variable32);
