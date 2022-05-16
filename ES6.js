@@ -150,3 +150,36 @@ function spreadExample(...args) {
 
 spreadExample(3);
 spreadExample(1, 2, 4, 10, 'teste');
+
+// JavaScript Map
+
+const map1 = new Map();
+console.log(map1);
+
+map1.set('peak', {min: 10, max: 30});
+console.log(map1);
+
+console.log(map1.get('peak'));
+console.log(map1.has('peak'));
+console.log(map1.has('thirsty'));
+
+map1.delete('thirsty');
+map1.delete('peak');
+console.log(map1)
+
+map1.set('thirsty', {drink: 'water'});
+console.log(map1);
+
+console.log(map1.size);
+
+map1.set('watermelon', {type: 'fruit', color: 'green'});
+console.log(map1);
+console.log(map1.size);
+
+const weakExample = new WeakMap();
+console.log(weakExample);
+
+let objectForWeak = {};
+
+weakExample.set(objectForWeak, '132');
+console.log(weakExample);
