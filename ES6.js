@@ -94,3 +94,59 @@ function stringExample(strings) {
 }
 
 stringExample`Eu sou uma string`;
+
+// Javascript Spread Operator
+
+const arrExample4 = ['Hello', 'World', 'Forgotten']
+console.log(arrExample4);
+console.log(...arrExample4);
+
+const arrExample5 = ['one', 'two'];
+const arrExample6 = [...arrExample5, 'three', 'four', 'five'];
+console.log(arrExample5);
+console.log(arrExample6);
+
+let arr1 = [1, 2, 3];
+let arr2 = arr1;
+
+console.log(arr1);
+console.log(arr2);
+
+arr1.push(4);
+
+console.log(arr1);
+console.log(arr2);
+
+let arr3 = [1, 2, 3];
+let arr4 = [...arr3];
+
+console.log(arr3);
+console.log(arr4);
+
+arr3.push(4);
+
+console.log(arr3);
+console.log(arr4);
+
+const objectExample2 = {
+    name: 'Thiago',
+    idade: 23
+}
+
+const objectExample3 = {
+    nacionalidade: 'Brasileiro'
+}
+
+const objectExample4 = {
+    ...objectExample2,
+    ...objectExample3
+}
+
+console.log(objectExample4);
+
+function spreadExample(...args) {
+    console.log(args);
+}
+
+spreadExample(3);
+spreadExample(1, 2, 4, 10, 'teste');
