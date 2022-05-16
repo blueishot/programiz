@@ -70,3 +70,27 @@ function defaultArg (x = 10) {
 }
 
 defaultArg(undefined); // return the default value.
+
+// JavaScript Template Literals (Template Strings)
+ 
+const variable25 = 'Manuel';
+console.log(`Hello ${variable25}`);
+
+const variable26 = `You can use 'quotes'`;
+console.log(variable26);
+
+const variable27 = `Gone now are the old times,
+Forgotten, time to hold on the railing,
+The Rubik's Cube isn't solving for us`;
+
+console.log(variable27);
+
+let variable28 = 19
+
+console.log(`${variable28 > 19 ? true : false}`);
+
+function stringExample(strings) {
+    return console.log(strings);
+}
+
+stringExample`Eu sou uma string`;

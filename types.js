@@ -173,3 +173,6 @@ console.log(objectExample);
 
 const symbolExample3 = Symbol.for('Coruja');
 console.log(symbolExample3);
+
+const symbolExample4 = Symbol.toSource(symbolExample2);
+console.log(symbolExample4)

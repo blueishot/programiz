@@ -50,11 +50,11 @@ let variable21 = 1;
 
 function recurse(numero) {
     console.log('Isso irá repetir algumas vezes...');
-    let somatoria = variable21 + numero
-    console.log(somatoria)
+    variable21 = variable21 + numero
+    console.log(variable21)
 
-    if(variable21 < 8) {
-        recurse();
+    if(variable21 <= 8) {
+        recurse(1);
     } else {
         console.log('O código acaba por aqui')
     }
