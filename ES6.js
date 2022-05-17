@@ -289,3 +289,27 @@ console.log(somebodyHoldMe);
 somebodyHoldMe.inTheMorning = 'party';
 console.log(somebodyHoldMe.talk);
 
+// JavaScript Class Inheritance
+
+class Hospital {
+    constructor(hospitalName, medicine) {
+        this.hospitalName = hospitalName;
+        this.medicine = medicine;
+        this.place = 'Rua insira um nome';
+    }
+
+    adress() {
+        console.log(`${this.hospitalName} que fica na ${this.place} dão ${this.medicine} para seus pacientes`);
+    }
+}
+
+class Doctor extends Hospital {
+    constructor(hospitalName, medicine) {
+        console.log('Você passou por uma class filho');
+        super(hospitalName, medicine)
+    }
+}
+
+let pacient = new Doctor('Santa Maria', 'Dipirona')
+pacient.adress()
+
