@@ -341,3 +341,67 @@ exampleMap.set('continente', 'Europa');
 for (let [key, value] of exampleMap) {
     console.log(key + ' ' + value)
 }
+
+// Javascript Proxy
+
+let someObject2 = {
+    color: 'Red',
+    type: 'Solid'
+}
+
+const handler = {
+    get: function (obj, prop) {
+        return obj[prop] ? obj[prop] : 'Propriedade inválida'
+    }
+}
+
+const proxy = new Proxy(someObject2, handler);
+console.log(proxy.color);
+console.log(proxy.type);
+console.log(proxy.colors);
+
+let someObject3 = {
+    type: 'Javascript',
+    framework: 'React'
+}
+
+const handler2 = { }
+
+const proxy2 = new Proxy(someObject3, handler2);
+console.log(proxy2.framework);
+console.log(proxy2.type);
+
+let someObject4 = {
+    name: 'Jonathan'
+}
+
+const handler3 = {
+    set: function(obj, prop, value) {
+        obj[prop] = value;
+        return;
+    }
+}
+
+let proxy3 = new Proxy(someObject4, handler3);
+someObject4.age = 21;
+console.log(`${proxy3.age} é a idade.`);
+
+let someObject5 = {
+    name: 'Thomas',
+    age: 32
+}
+
+const handler5 = {
+    get(obj, prop) {
+        if (prop === 'name') {
+            return obj[prop];
+        } else {
+            return 'not allowed'
+        }
+    }
+}
+
+let proxy5 = new Proxy(someObject5, handler5);
+
+console.log(proxy5.name);
+console.log(proxy5.age);
