@@ -313,3 +313,31 @@ class Doctor extends Hospital {
 let pacient = new Doctor('Santa Maria', 'Dipirona')
 pacient.adress()
 
+// JavaScript for... of Loop
+
+const languages = ['javascript', 'C++', 'python', 'kotlin'];
+
+for (let elements of languages) {
+    console.log(elements);
+}
+
+const stringExample2 = 'Espaços';
+
+for (let i of stringExample2) {
+    console.log(i)
+}
+
+const set10 = new Set([1, 3, 5])
+
+for (let i of set10) {
+    console.log(i)
+}
+
+let exampleMap = new Map();
+
+exampleMap.set('cidades', 'Paris', 'Lisboa');
+exampleMap.set('continente', 'Europa');
+
+for (let [key, value] of exampleMap) {
+    console.log(key + ' ' + value)
+}
