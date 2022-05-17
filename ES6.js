@@ -242,3 +242,50 @@ console.log(variable32);
 
 console.log(variable31);
 console.log(variable32);
+
+//JavaScript Classes
+
+class Songs {
+    constructor(songName) {
+        this.songName = songName;
+    }
+}
+
+const song = new Songs('Bones - Imagina Dragon');
+console.log(song)
+
+class Someone {
+    constructor(somebody) {
+        this.somebody = somebody;
+    }
+
+    feeling() {
+        console.log(`Someone called ${this.somebody}`);
+    }
+}
+
+const watch = new Someone('Jack');
+console.log(watch);
+
+watch.feeling();
+
+class Nobody {
+    constructor(talk) {
+        this.talk = talk;
+    }
+
+    get inTheMorning() {
+        return this.talk;
+    }
+
+    set inTheMorning(x) {
+        this.talk = x;
+    }
+}
+
+const somebodyHoldMe = new Nobody('laught');
+console.log(somebodyHoldMe);
+
+somebodyHoldMe.inTheMorning = 'party';
+console.log(somebodyHoldMe.talk);
+
