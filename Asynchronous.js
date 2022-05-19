@@ -89,3 +89,48 @@ console.log(countValue);
  })
 
  console.log(valorFinal3)
+
+ // Javascript async/await
+
+ async function asyncFunc() {
+     console.log('Isso é uma função async');
+     return Promise.resolve(1);
+ }
+
+asyncFunc()
+.then(function (result) {
+    console.log(result)
+});
+
+
+let promiseExample2 = new Promise(function(resolve, reject) {
+    setTimeout(function () {
+        resolve('Essa função async funcionou no resolve'), 4000
+    })
+});
+
+async function asyncFunc2() {
+    let result = await promiseExample2;
+    console.log(result);
+    console.log('Oi sou o asyncFunc2')
+}
+
+asyncFunc2()
+
+let promiseExample3 = new Promise(function (resolve, reject) {
+    setTimeout(function () {
+        resolve('Promise foi resolvida do promiseExample3'), 3000
+    });
+})
+
+async function asyncFunc3() {
+    try{
+        let result = await promiseExample3;
+        console.log(result)
+    }
+    catch(error) {
+        console.log(error)
+    }
+}
+
+asyncFunc3()
