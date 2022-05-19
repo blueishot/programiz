@@ -134,3 +134,25 @@ async function asyncFunc3() {
 }
 
 asyncFunc3()
+
+// Javascript setInterval()
+
+function setIntervalExample() {
+    console.log('Eu sou um exemplo de setInterval');
+}
+
+setInterval(setIntervalExample, 3000);
+clearInterval(setIntervalExamplem);
+
+let contador = 0;
+
+let setIntervalExample2 = setInterval(function() {
+    contador += 1;
+    if (contador === 5) {
+        clearInterval(setIntervalExample2);
+    }
+    let dateTime2 = new Date();
+    let time2 = dateTime2.toLocaleTimeString();
+    console.log(time2);
+}, 3000);
+
